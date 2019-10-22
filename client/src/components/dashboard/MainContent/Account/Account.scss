@@ -1,0 +1,100 @@
+@import "../../../../styles/base.scss";
+.main-content__account-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  font-family: "Gotham Pro";
+  //height: 90vh;
+}
+.main-content__account-wrapper h1 {
+  padding-bottom: 0;
+}
+.main-content__main-settings {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  border-top: 1px solid $primaryBlue;
+  margin-left: 12em;
+  height: auto;
+}
+.upload-photo {
+  display: flex;
+  flex-direction: row;
+}
+.main-content__wrapper-text {
+    display: flex;
+    flex-direction: column;
+}
+.main-content__main-settings h3 {
+  padding-top: 0;
+  margin: 0;
+  margin-top: 0.5em;
+}
+.main-content__main-settings-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 2em;
+}
+.main-content__main-settings-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10em;
+}
+.main-content__forms {
+  width: 30em;
+}
+.auth-label__description {
+  padding: 5px 0 0 15px;
+  font-size: 9px;
+  color: $darkGray;
+}
+.main-content__change-photo {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  font-weight: $light;
+  background-color: $primaryBlue;
+  margin-left: 10em;
+  margin-top: 3em;
+}
+.main-content__condition-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5em;
+  font-size: 0.8em;
+  margin-top: 3em;
+}
+
+.inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: black;
+  border: 1px solid $primaryBlue;
+  border-radius: 10px;
+  padding: 9px;
+  font-weight: $light;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: $primaryBlue;
+  transform: scale(1.03);
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+.inputfile:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline: none;
+}

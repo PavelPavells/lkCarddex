@@ -1,0 +1,65 @@
+@import "../../../../styles/base.scss";
+
+.wrapper-price {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6em;
+  margin: 5px;
+}
+.wrapper-price__header-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+}
+#header-item__itype-name {
+  width: 19em;
+}
+#header-item__item-article {
+  width: 10em;
+}
+#header-item__item-name {
+  width: 27em;
+}
+#header-item__currency-desc {
+  width: 5em
+}
+#header-item__price {
+  width: 10em
+}
+.header-item {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid $primaryBlue;
+  font-size: 15px;
+}
+.header-item-input {
+  width: 11em;
+}
+.header-item-input > input {
+  height: 3em;
+  border-style: none;
+  border-bottom: 1px solid $primaryBlue;
+  font-family: $code;
+  font-size: 16px;
+  outline: none;
+  outline-offset: 0;
+}
+.wrapper-auth-button__price-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.auth-button__price-list {
+  height: 35px;
+  margin-top: 1rem;
+  color: #ffffff;
+  background-color: $primaryBlue;
+  border-radius: 7px;
+  border-color: transparent;
+  font-size: 15px;
+  font-family: 'Gotham Pro';
+  outline: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+}
